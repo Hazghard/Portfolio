@@ -3,7 +3,7 @@ import { Social } from "./Social"
 
 export type Profile={
     bio:PortableTextBlock,
-    image:Object,
+    image:string,
     name:string,
     profession:string[],
     smallBio:string,
