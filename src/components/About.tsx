@@ -8,9 +8,9 @@ import Motion from './Motion'
 type Props = {}
 
 const About = (props: Props) => {
-    const textAbout1 = "Passionné par le développement Frontend, je suis actuellement en reconversion professionnelle après avoir exercé en tant qu'ingénieur expert en sécurité des machines. Ma transition vers le domaine du développement a été marquée par l'obtention de mon diplôme sur la plateforme OpenClassrooms."
-    const textAbout2 = "Fort de mon expertise antérieure en sécurité, j'apporte une approche rigoureuse et orientée vers la qualité à mes projets de développement."
-    const textAbout3 = "Mon parcours professionnel diversifié me confère une vision holistique des technologies, et je suis constamment avide d'apprendre et de m'adapter aux évolutions du secteur ainsi que de relever de nouveaux défis passionnants"
+    const textAbout1 = "Passionate about Frontend development, I am currently undergoing professional retraining after working as a machine security expert engineer. My transition to the development field was marked by obtaining my degree on the OpenClassrooms platform.";
+    const textAbout2 = "Drawing from my previous expertise in security, I bring a rigorous and quality-oriented approach to my development projects.";
+    const textAbout3 = "My diverse professional background provides me with a holistic view of technologies, and I am constantly eager to learn and adapt to industry changes as well as take on new exciting challenges.";
     return (
         <section className='max-w-7x1 mx-auto py-[70px] lg:px-80 md:px-20 flex flex-col items-center justify-center space-y-6 '>
             <Motion delay={0.1} direction={'left'}>
