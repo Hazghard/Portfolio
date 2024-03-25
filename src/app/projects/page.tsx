@@ -28,4 +28,4 @@ const ProjectsPage = async ({props}: Props) => {
   )
 }
 
-export {ProjectsPage}
+export default ProjectsPage;
