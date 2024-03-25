@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Next.js + Sanity + Typesctipt Portfolio",
+  title: "Next.js + Sanity + Typescript Portfolio",
   description: "Florimond LAPAQUE Portfolio",
 };
 
