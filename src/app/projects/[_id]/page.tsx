@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { getFiles, getProfile, getProjects, getSkills, getSocials } from "@/utils/sanity-utils";
 
 import reactIcon from '@public/react-icon.png'
 
@@ -10,10 +11,12 @@ import reactIcon from '@public/react-icon.png'
 
 type Props = {}
 
-const ProjectPage = (props: Props) => {
+const ProjectPage = async (props: Props) => {
+    const getSocialData = await getSocials();
+    const getProfileFiles = await getFiles();
   return (
     <section className='w-full bg-[#F1F6F9]'>
-        <Navbar/>
+      <Navbar getSocialData={getSocialData} getProfileFiles={getProfileFiles} />
         <div className='min-h-screen flex flex-col max-w-7x1 mx-auto my-4 md:my-8 p-5 space-y-4'>
             <h1 className='font-extrabold text-3x1'>MERN Stack Blog App</h1>
             <div className='flex items-center justify-between'>
@@ -34,7 +37,7 @@ const ProjectPage = (props: Props) => {
                 </div>
             </div>
         </div>
-        <Footer/>
+        <Footer props={getSocialData}/>
     </section>
   )
 }
