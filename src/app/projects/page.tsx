@@ -6,11 +6,11 @@ import React from 'react'
 import { getFiles, getProfile, getProjects, getSkills, getSocials } from "@/utils/sanity-utils";
 import {ProjectsType} from '@/app/types/ProjectsType'
 
-type Props = {
+type ProjectsPageProps  = {
   props:ProjectsType[]
 }
 
-const ProjectsPage = async ({props}: Props) => {
+const ProjectsPage = async ({props}: ProjectsPageProps ) => {
   const getSocialData = await getSocials();
   const getProfileFiles = await getFiles();
   return (
